@@ -3,6 +3,7 @@
 <head>
     <title>Detector de Nombres y Apellidos</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="background-shapes">
@@ -12,10 +13,13 @@
     </div>
     <div class="container">
         <form action="/detectar" method="post" class="form-container">
-            <label for="palabra">Introduce una palabra:</label>
+            <label for="palabra">Introduce un nombre/apellido:</label>
             <input type="text" name="palabra" required>
             <input type="submit" value="Detectar">
         </form>
     </div>
+    <footer class="custom-footer">
+        Creado por Josef Romero y Jhosaim Pocohuanca.
+    </footer>
 </body>
 </html>
