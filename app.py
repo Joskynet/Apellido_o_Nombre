@@ -24,7 +24,7 @@ def detectar_nombre_o_apellido(palabra):
         messages=[
             {
                 "role": "system",
-                "content": "ULTRA_PROMPT"
+                "content": os.getenv("ULTRA_PROMPT")
             },
             {
                 "role": "user",
