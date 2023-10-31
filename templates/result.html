@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background-shapes">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <span>'{{ palabra }}' es un: {{ resultado }}</span>
+            <br>
+            <a href="/" class="regresar-button">Regresar</a>
+        </div>
+    </div>
+</body>
+</html>
